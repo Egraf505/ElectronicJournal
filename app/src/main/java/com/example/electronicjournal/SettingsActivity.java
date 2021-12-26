@@ -18,6 +18,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_setting);
 
+        bottomNavigationView.setSelectedItemId(R.id.Settings);
+
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="#242C34"
         app:itemIconSize="45dp"
-        app:itemIconTint="@color/colors_bottom_naavigatiom"
+        app:itemIconTint="@drawable/color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
-            android:background="#242C34">
+            android:background="@drawable/round_bacground">
 
             <ImageView
                 android:id="@+id/image_user"
@@ -62,7 +62,7 @@
 
 
                 <TextView
-                    android:id="@+id/pass_user"
+                    android:id="@+id/secondname_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -82,7 +82,7 @@
         android:layout_height="match_parent"
         app:layout_constrainedHeight="true"
         android:layout_marginBottom="3dp"
-        android:background="#242C34"
+        android:background="@drawable/round_bacground"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -94,6 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Группа: "
+            android:textSize="30dp"
             android:textColor="#eeeeee"
             android:gravity="left"
             tools:layout_editor_absoluteX="-2dp"
@@ -105,6 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Нб:"
+            android:textSize="30dp"
             android:textColor="#eeeeee"
             android:gravity="left"
             tools:layout_editor_absoluteX="-2dp"

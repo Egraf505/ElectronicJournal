@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     //FireBase
     private FirebaseAuth mAuth;
+    static FirebaseUser user;
     //кнопки
     EditText Login, Password;
     Button loginbtn;
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser user = mAuth.getCurrentUser();
+        user = mAuth.getCurrentUser();
         if (user != null) {
             startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         }
