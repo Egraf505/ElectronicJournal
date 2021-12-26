@@ -12,13 +12,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SettingsActivity extends AppCompatActivity {
+
+    private static FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        mAuth = FirebaseAuth.getInstance();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_setting);
 
@@ -46,6 +51,7 @@ public class SettingsActivity extends AppCompatActivity {
         TextView license = findViewById(R.id.textLicense);
         TextView version = findViewById(R.id.textVersion);
         TextView egg = findViewById(R.id.textEgg);
+        TextView exit = findViewById(R.id.Exit);
 
         license.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +71,15 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
+                startActivity(intent);
+            }
+        });
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                Intent intent = new Intent(SettingsActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });

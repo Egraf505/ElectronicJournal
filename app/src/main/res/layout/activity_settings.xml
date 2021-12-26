@@ -37,12 +37,13 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_margin="20dp"
-        android:padding="5dp"
         android:background="@drawable/round_bacground"
+        android:orientation="vertical"
+        android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_setting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,31 +52,52 @@
         app:layout_constraintVertical_bias="0.105">
 
         <TextView
-            android:layout_marginTop="10dp"
             android:id="@+id/textLicense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Лицензионное соглашение"
             android:textColor="#eeee"
-            android:textSize="23dp"/>
+            android:textSize="23dp" />
 
         <TextView
-            android:layout_marginTop="10dp"
             android:id="@+id/textVersion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Версия"
             android:textColor="#eeee"
-            android:textSize="23dp"/>
+            android:textSize="23dp" />
 
         <TextView
-            android:layout_marginTop="10dp"
             android:id="@+id/textEgg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Пасхалка"
             android:textColor="#eeee"
-            android:textSize="23dp"/>
+            android:textSize="23dp" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_bacground"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="Выйти"
+        android:textColor="#FF0000"
+        android:textSize="23dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.521" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -40,6 +40,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TableLayout
+        android:padding="5dp"
         android:id="@+id/table_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

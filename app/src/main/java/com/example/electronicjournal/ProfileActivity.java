@@ -35,7 +35,6 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView name ;
     private TextView secondname;
     private TextView group;
-    private  TextView nb;
 
     private DocumentReference myRef;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -73,7 +72,6 @@ public class ProfileActivity extends AppCompatActivity {
         name = findViewById(R.id.name_user);
         secondname = findViewById(R.id.secondname_user);
         group = findViewById(R.id.group_user);
-        nb = findViewById(R.id.list_nb);
 
         myRef = db.collection(user.getUid()).document("User");
         myRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
