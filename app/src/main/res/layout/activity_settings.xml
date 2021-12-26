@@ -20,4 +20,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
 
+    <TextView
+        android:id="@+id/textsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_bacground"
+        android:text="Настройки"
+        android:textColor="#eeee"
+        android:padding="5dp"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:background="@drawable/round_bacground"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsetting"
+        app:layout_constraintVertical_bias="0.105">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лицензионное соглашение"
+            android:textColor="#eeee"
+            android:textSize="23dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Версия"
+            android:textColor="#eeee"
+            android:textSize="23dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textEgg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пасхалка"
+            android:textColor="#eeee"
+            android:textSize="23dp"/>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

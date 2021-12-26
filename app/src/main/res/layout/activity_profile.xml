@@ -93,6 +93,7 @@
             android:id="@+id/group_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:text="Группа: "
             android:textSize="30dp"
             android:textColor="#eeeeee"
@@ -101,17 +102,6 @@
             tools:layout_editor_absoluteY="220dp"
             />
 
-        <TextView
-            android:id="@+id/list_nb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Нб:"
-            android:textSize="30dp"
-            android:textColor="#eeeeee"
-            android:gravity="left"
-            tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="220dp"
-            />
     </LinearLayout>
 
 
